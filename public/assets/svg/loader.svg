@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="loader">
+<circle id="Ellipse 4" cx="16.0001" cy="15.9999" r="14" transform="rotate(1 16.0001 15.9999)" stroke="url(#paint0_angular_267_12853)" stroke-width="4"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_267_12853" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.0001 15.9999) rotate(90) scale(16)">
+<stop stop-color="#406AFF"/>
+<stop offset="1" stop-color="#406AFF" stop-opacity="0"/>
+
+</radialGradient>
+
+</defs>
+
+</svg>
