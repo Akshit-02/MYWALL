@@ -1,0 +1,49 @@
+.sections {
+  top: 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.stickyIcons {
+  position: fixed;
+  bottom: 16px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.whatsapp {
+  background-color: #1dff1e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.whatsappBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.up {
+  background-color: #9a68f8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .sections {
+    top: 5rem;
+  }
+}
