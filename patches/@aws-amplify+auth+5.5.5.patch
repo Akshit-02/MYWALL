@@ -1,0 +1,17 @@
+diff --git a/node_modules/@aws-amplify/auth/src/types/Auth.ts b/node_modules/@aws-amplify/auth/src/types/Auth.ts
+index 61996e7..bea5f84 100644
+--- a/node_modules/@aws-amplify/auth/src/types/Auth.ts
++++ b/node_modules/@aws-amplify/auth/src/types/Auth.ts
+@@ -19,9 +19,9 @@ export interface SignUpParams {
+ }
+ 
+ export interface AuthCache {
+-	setItem();
+-	getItem();
+-	removeItem();
++	setItem(): void;
++	getItem(): void;
++	removeItem(): void;
+ }
+ 
+ /**
