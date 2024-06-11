@@ -1,0 +1,186 @@
+.portfolioContainer {
+  display: grid;
+  gap: 12px;
+  height: max-content;
+}
+
+.container {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 16px;
+  width: 18rem;
+  box-shadow: 6px 0px 18px -11px rgba(143, 143, 143, 0.66);
+  margin: 0.3rem 0.7rem 0.3rem 0;
+
+  .editButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  a {
+    display: flex;
+    gap: 18px;
+
+    .image {
+      border-radius: 12px;
+      mix-blend-mode: darken;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    gap: 4px;
+    .title {
+      color: var(--light-black-color);
+      font-family: var(--font-semiBold);
+      font-size: 14px;
+      font-style: normal;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .description {
+      color: var(--light-black-text-color);
+      font-family: var(--font-regular);
+      font-size: 14px;
+    }
+  }
+}
+
+.listScrollerWrapper {
+  overflow-x: scroll;
+  .listScroller {
+    display: flex;
+    width: fit-content;
+    overflow-x: scroll;
+    gap: 1rem;
+    align-items: center;
+  }
+  .listScroller::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.listScrollerWrapper::-webkit-scrollbar {
+  display: none;
+}
+.listScroller::-webkit-scrollbar {
+  display: none;
+}
+.reactPlayer {
+  div {
+    overflow: hidden;
+  }
+  iframe {
+    border-radius: 12px;
+  }
+}
+.addMoreWrapper {
+  display: flex;
+  height: 20.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px dashed var(--primary-color);
+  background: "#f5f7ff";
+  border-radius: 12px;
+  .addMoreInnerWrapper {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    .addMoreIconWrapper {
+      border: 1px solid var(--primary-color);
+      border-radius: 50%;
+      background: var(--primary-color);
+      padding: 4px 4px 0px 4px;
+    }
+    .addMoreButton {
+      font-size: 16px;
+      color: var(--primary-color);
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+.descriptionWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.viewMore {
+  color: var(--light-black-text-color);
+  font-family: var(--font-regular);
+  font-size: 12px !important;
+  color: #4589e4;
+  cursor: pointer;
+}
+
+.videoContainer {
+  height: 210px;
+}
+
+.videoContainer {
+  position: relative;
+
+  .options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    gap: 4px;
+
+    .editIcon {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px;
+    }
+    .linkIcon {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px;
+    }
+  }
+}
+.header {
+  font-family: var(--font-semiBold);
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--header-font-color);
+}
+.disableSubSection {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.linkButton {
+  width: 100%;
+  flex-direction: row;
+  border-radius: 27px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white-color);
+  font-family: var(--font-regular);
+  font-size: 14px;
+  text-align: center;
+  height: 40px;
+  cursor: pointer;
+}
