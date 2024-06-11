@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  gap: 12px;
+
+  .videoSlides {
+    padding: 16px;
+    margin-right: 20px;
+    border-radius: 16px;
+    height: 100%;
+    width: 18rem;
+    box-shadow: 6px 0px 18px -11px rgba(143, 143, 143, 0.66);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .innerEditWrapper {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .reactPlayer {
+      > div {
+        overflow-y: hidden;
+        border-radius: 15px;
+      }
+    }
+  }
+  .bottomWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    // margin-top: 1.5rem;
+    span {
+      font-family: var(--font-regular);
+      font-size: 14px;
+      text-align: center;
+    }
+    .ctaButton {
+      width: 100%;
+      flex-direction: row;
+      border-radius: 27px;
+      background-color: var(--primary-color);
+      border: none;
+      color: var(--white-color);
+      font-family: var(--font-regular);
+      font-size: 14px;
+      text-align: center;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+}
+
+.viewMore {
+  color: var(--light-black-text-color);
+  font-family: var(--font-regular);
+  font-size: 12px !important;
+  color: #4589e4;
+  cursor: pointer;
+}
+.description {
+  color: var(--light-black-text-color);
+  font-family: var(--font-regular);
+  font-size: 14px;
+}
+
+.listScroller {
+  display: flex;
+  overflow-x: scroll;
+}
+.listScroller::-webkit-scrollbar {
+  display: none;
+}
+.addMoreContainer {
+  width: 15.5rem;
+  height: 100%;
+  .addMoreWrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px dashed var(--primary-color);
+    background: "#f5f7ff";
+    border-radius: 12px;
+    .addMoreInnerWrapper {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      .addMoreIconWrapper {
+        border: 1px solid var(--primary-color);
+        border-radius: 50%;
+        background: var(--primary-color);
+        padding: 4px 4px 0 4px;
+      }
+      .addMoreButton {
+        font-size: 16px;
+        color: var(--primary-color);
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.videoWrapper {
+  position: relative;
+  height: 210px;
+
+  .options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    gap: 4px;
+
+    .editIcon {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px;
+    }
+    .linkIcon {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px;
+    }
+  }
+}
+.header {
+  font-family: var(--font-semiBold);
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--header-font-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.disableSubSection {
+  pointer-events: none;
+  opacity: 0.5;
+}
