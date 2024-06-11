@@ -1,0 +1,23 @@
+.title {
+  font-size: 18px;
+  font-family: var(--font-semiBold);
+  line-height: 30px !important;
+  color: var(--black-color);
+  text-align: center;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.privacyPage {
+  font-size: 14px;
+  font-family: var(--font-regular);
+  color: var(--light-black-text-color);
+  line-height: 20px;
+
+  .bold {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: var(--font-semiBold);
+  }
+}
