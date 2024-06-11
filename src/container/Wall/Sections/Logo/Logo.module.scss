@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  font-family: var(--font-regular);
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-family: var(--font-semiBold);
+      font-size: 20px;
+      color: var(--light-black-text-color);
+    }
+  }
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    .imageWrapper {
+      overflow: hidden;
+      height: 5rem;
+      width: 5rem;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    video {
+      border-radius: 20px;
+    }
+    .reactPlayer {
+      overflow: hidden;
+    }
+    .overlayContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 0px);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .bottomWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 0;
+      width: 100%;
+      span {
+        font-family: var(--font-regular);
+        font-size: 14px;
+      }
+    }
+  }
+  .listScrollerWrapper {
+    overflow-x: scroll;
+    .listScroller {
+      display: flex;
+      width: fit-content;
+      overflow-x: scroll;
+      gap: 1rem;
+    }
+  }
+  .listScrollerWrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+.listScroller::-webkit-scrollbar {
+  display: none;
+}
+.addMoreWrapper {
+  display: flex;
+  height: 5.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px dashed var(--primary-color);
+  background: "#f5f7ff";
+  border-radius: 12px;
+  .addMoreInnerWrapper {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    // padding: 0.5rem;
+    .addMoreIconWrapper {
+      border: 1px solid var(--primary-color);
+      border-radius: 50%;
+      background: var(--primary-color);
+      padding: 4px 4px 0px 4px;
+    }
+    .addMoreButton {
+      font-size: 16px;
+      color: var(--primary-color);
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+.header {
+  font-family: var(--font-semiBold);
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--header-font-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.disableSubSection {
+  pointer-events: none;
+  opacity: 0.5;
+}
