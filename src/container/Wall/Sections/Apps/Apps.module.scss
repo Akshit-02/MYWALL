@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--font-regular);
+
+  .section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(217, 178, 116, 0.16);
+    border-radius: 16px;
+    padding: 16px;
+    margin-right: 10px;
+    height: 15rem;
+    overflow: hidden;
+    box-shadow: 6px 0px 18px -11px rgba(143, 143, 143, 0.66);
+    margin: 0.3rem 0.7rem 0.3rem 0;
+
+    .singleLink {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .titleWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        .title {
+          font-size: 16px;
+          font-family: var(--font-bold);
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 14rem;
+        }
+        .description {
+          color: var(--light-black-text-color);
+          font-family: var(--font-regular);
+          font-size: 14px;
+        }
+      }
+    }
+    .singleLink img {
+      object-fit: cover;
+    }
+    .icon {
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+
+    .appIcon {
+      margin-top: 10px;
+      width: 90px;
+      height: 28px;
+    }
+  }
+}
+.ftSlickDotsCustom {
+  height: 8px;
+  width: 14px;
+  background-color: #e5e7e9;
+  border-radius: 4px;
+  position: relative;
+}
+
+.slick-dots .slick-active .ftSlickDotsCustom {
+  width: 56px;
+  top: 0px;
+  overflow: hidden;
+
+  .loading {
+    height: 8px;
+    animation: loading 5s ease-in;
+    background-image: linear-gradient(270deg, #4fd15a, #03ac0e);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+  }
+}
+
+.addMoreWrapper {
+  display: flex;
+  height: 14.6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px dashed var(--primary-color);
+  background: "#f5f7ff";
+  border-radius: 12px;
+  .addMoreInnerWrapper {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    .addMoreIconWrapper {
+      border: 1px solid var(--primary-color);
+      border-radius: 50%;
+      background: var(--primary-color);
+      padding: 4px 4px 0px 4px;
+    }
+    .addMoreButton {
+      font-size: 16px;
+      color: var(--primary-color);
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.listScrollerWrapper {
+  overflow-x: scroll;
+  .listScroller {
+    display: flex;
+    width: fit-content;
+    overflow-x: scroll;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.listScrollerWrapper::-webkit-scrollbar {
+  display: none;
+}
+.listScroller::-webkit-scrollbar {
+  display: none;
+}
+.descriptionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.viewMore {
+  color: var(--light-black-text-color);
+  font-family: var(--font-regular);
+  font-size: 12px !important;
+  color: #4589e4;
+  cursor: pointer;
+}
+.editButtonContainer {
+  float: right;
+  .editButton {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+  }
+}
+.header {
+  font-family: var(--font-semiBold);
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--header-font-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.disableSubSection {
+  pointer-events: none;
+  opacity: 0.5;
+}
