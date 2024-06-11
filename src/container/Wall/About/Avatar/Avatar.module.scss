@@ -1,0 +1,17 @@
+.avatarContainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  height: 18rem;
+  overflow: hidden;
+  .userSection {
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    .avatar {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+    }
+  }
+}

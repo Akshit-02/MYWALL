@@ -1,0 +1,20 @@
+.bio {
+  margin: 4px 2px 4px;
+  // cursor: text;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 12px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  color: var(--light-black-text-color);
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  white-space: pre-line;
+}

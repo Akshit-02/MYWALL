@@ -1,0 +1,42 @@
+.buttonDiv {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .buttonContainer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    .edit {
+      color: var(--light-black-text-color);
+      cursor: pointer;
+      padding: 2px;
+    }
+
+    .button {
+      background-color: var(--primary-color);
+      border-radius: 40px;
+      padding: 12px 24px;
+      color: var(--white-color);
+      font-size: 14px;
+      font-family: var(--font-semiBold);
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .buttonBorder {
+      border-radius: 40px;
+      padding: 12px 24px;
+      color: var(--primary-color);
+      font-size: 14px;
+      font-family: var(--font-semiBold);
+      border: 1px solid var(--primary-color);
+      background-color: var(--white-color);
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}
