@@ -1,0 +1,93 @@
+.step2Container {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .back {
+    cursor: pointer;
+    color: var(--light-grey);
+    font-family: var(--font-regular);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .headerContainer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white-color);
+    flex-direction: column;
+    gap: 0.7rem;
+
+    .header {
+      color: var(--light-black-text-color);
+      font-family: var(--font-semiBold);
+      font-size: 24px;
+    }
+
+    .selectSocial {
+      color: var(--light-black-text-color);
+      font-family: var(--font-regular);
+      font-size: 14px;
+    }
+  }
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .social {
+      position: relative;
+
+      .platformContainer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        .optionIcon {
+          cursor: pointer;
+        }
+      }
+      .errorMessage {
+        position: absolute;
+        font-size: 11px;
+        font-family: var(--font-regular);
+        color: red;
+        left: 15%;
+        margin: 0.3rem 0;
+      }
+    }
+  }
+
+  .buttonDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+
+    .clearAllBtn {
+      width: auto;
+    }
+  }
+}
+.logoutBtn {
+  display: flex;
+  justify-content: flex-end;
+  .iconWrapper {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    font-size: 15px;
+    background-color: var(--white-color-2);
+    border: 0.05rem solid rgb(202, 202, 202);
+    color: #757575;
+  }
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+}

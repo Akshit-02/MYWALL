@@ -1,0 +1,97 @@
+.container {
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    .formItem{
+        margin-bottom: 12px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        color: var(--light-black-color);
+        font-family: var(--font-semiBold);
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+    .registrationForm {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottomWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .continueWithGoogleLeft {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        background-color: var(--white-color);
+        cursor: pointer;
+        border-radius: 12px;
+        border: 1px solid #e2e5e9;
+        font-family: var(--font-regular);
+        padding: 0.75rem;
+    }
+    .googleLogoIcon {
+        width: 20px;
+        height: 20px;
+    }
+    .connectDiv p {
+        overflow: hidden;
+        text-align: center;
+        font-family: var(--font-regular);
+        color: #aaa8a8;
+        font-size: 12px;
+    }
+    .connectDiv p::before,
+    .connectDiv p::after {
+        background-color: #aaa8a8;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    .connectDiv p::before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    .connectDiv p::after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+    .footer {
+        font-family: var(--font-regular);
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .footerLink {
+        color: #1677ff;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .footerLink:hover {
+        color: #0fa1de;
+    }
+}
+.label {
+    font-size: 16px;
+    font-weight: 600;
+}

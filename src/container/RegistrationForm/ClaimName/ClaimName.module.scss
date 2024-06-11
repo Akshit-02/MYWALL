@@ -1,0 +1,116 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+
+  .logoutBtn {
+    display: flex;
+    justify-content: flex-end;
+    .iconWrapper {
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      font-size: 15px;
+      background-color: var(--white-color-2);
+      border: 0.05rem solid rgb(202, 202, 202);
+      color: #757575;
+    }
+  }
+  .mywallParent {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  overflow: unset;
+  margin-bottom: 10px;
+}
+
+.header {
+  color: var(--light-black-color);
+  margin-top: 48px;
+  font-family: var(--font-semiBold);
+  font-size: 20px;
+}
+
+.userNamefield {
+  color: var(--light-black-text-color);
+  font-family: var(--font-semiBold);
+  font-size: 14px;
+  padding: 20px;
+  display: flex;
+  border: 1px solid #e2e5e9;
+  border-radius: 12px;
+  align-items: center;
+
+  .text {
+    color: var(--light-grey);
+    font-family: var(--font-regular);
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 6px;
+    width: fit-content;
+  }
+
+  .userInput {
+    color: var(--light-black-color);
+    font-family: var(--font-regular);
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .userInput[type="text"] {
+    border: none;
+    outline: none;
+  }
+}
+
+.error {
+  color: #e41818;
+  display: flex;
+  justify-content: left;
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: 20px;
+}
+.suggestion {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  .suggestionHeader {
+    color: var(--light-black-text-color);
+    font-family: var(--font-regular);
+    font-size: 14px;
+  }
+  .suggestionContainer {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+
+    .suggestionItem {
+      font-size: 12px;
+      font-family: var(--font-regular);
+      color: #406aff;
+      border-radius: 28px;
+      background-color: #ebebfd;
+      padding: 0.1rem 0.7rem;
+      cursor: pointer;
+    }
+    .suggestionItem:hover {
+      color: #1f41ba;
+      background-color: #ced7f6;
+    }
+    .selected {
+      color: #1f41ba;
+      background-color: #ced7f6;
+    }
+  }
+}
