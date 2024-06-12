@@ -1,0 +1,199 @@
+.fadeScreen {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.resetScreen {
+  opacity: 1;
+  pointer-events: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100%;
+  font-family: var(--font-regular);
+  padding-bottom: 5rem;
+  .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header {
+      color: var(--light-black-text-color);
+      font-family: var(--font-semiBold);
+      font-size: 28px;
+      line-height: 36px; /* 128.571% */
+      letter-spacing: -0.5px;
+    }
+    .select {
+      border: none;
+      font-size: 14px;
+      color: var(--light-grey-two);
+      outline: none;
+    }
+  }
+
+  .subTitleWrapper {
+    margin: 12px 0;
+  }
+  .connectionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 28px;
+    border-radius: 12px;
+    border: 1px dashed var(--neutral-200, #e2e5e9);
+    .connectionSubContentWrapper {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .connectionMessageWrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+      .title {
+        font-family: var(--font-semiBold);
+      }
+      .message {
+        font-size: 12px;
+      }
+    }
+    .submitWrapper {
+      display: flex;
+      justify-content: center;
+      .submitButton {
+        padding: 8px 16px;
+        border-radius: 8px;
+        background-color: var(--secondary-color);
+        border: none;
+        color: var(--white-color);
+        font-family: var(--font-regular);
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .failedMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-25);
+    padding: 14px;
+    border-radius: 10px;
+    position: relative;
+    span {
+      font-size: 12px;
+    }
+    .cancel {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+    }
+  }
+
+  .radioGroups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div {
+      margin-right: 20px;
+      margin-top: 12px;
+    }
+  }
+
+  .insightsTitleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .expired {
+      font-size: 12px;
+      color: var(--light-grey-two);
+    }
+    .updated {
+      font-size: 12px;
+      color: green;
+    }
+  }
+
+  .appContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .section {
+      .insightsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .insightsInfo {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+          padding: 20px;
+          border-radius: 12px;
+          position: relative;
+          z-index: 2;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: var(--primary-color);
+            opacity: 0.1;
+            z-index: 1;
+          }
+
+          .insightsTitle {
+            font-size: 14px;
+            font-family: var(--font-regular);
+            min-width: fit-content;
+
+            .insightsValue {
+              margin-top: 8px;
+              font-size: 14px;
+              font-family: var(--font-semiBold);
+            }
+          }
+
+          .insightsValue {
+            span {
+              font-size: 14px;
+              font-family: var(--font-semiBold);
+            }
+          }
+
+          .city {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.header {
+  font-family: var(--font-semiBold);
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--header-font-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
