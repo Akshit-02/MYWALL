@@ -1,0 +1,119 @@
+.addNewComponents {
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh;
+
+  .noCollection {
+    min-height: 80vh;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+  }
+
+  .collectionHead {
+    color: var(--light-black-text-color);
+    font-family: var(--font-semiBold);
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .newComponent {
+    border-radius: 12px;
+    background-color: var(--white-color-three);
+    height: 244px;
+    margin-top: 18px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px dashed var(--secondary-color);
+  }
+
+  .iconsContainer {
+    display: flex;
+    gap: 10px;
+  }
+
+  .emptyState {
+    display: inline-grid;
+    height: 64px;
+    background: var(--white-color);
+    align-self: center;
+    width: 64px;
+    border-radius: 12px;
+
+    .imgIcon {
+      align-self: center;
+      justify-self: center;
+    }
+  }
+
+  .noCollectionemptyState {
+    display: inline-grid;
+    height: 64px;
+    background: #eff2f5;
+    border: 1px solid #e2e5e9;
+    align-self: center;
+    width: 64px;
+    border-radius: 12px;
+  }
+
+  .addText {
+    color: #ffffff;
+    font-family: var(--font-regular);
+    font-size: 16px;
+    line-height: 24px;
+    align-self: center;
+    margin-top: 16px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .grid {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    .gridContainer {
+      color: var(--light-black-text-color);
+      font-family: var(--font-regular);
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 12px;
+
+      .gridItem {
+        font-family: var(--font-semiBold);
+        height: 150px;
+        border-radius: 12px;
+        background-color: var(--white-color-2);
+        font-size: 24px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+        color: var(--light-black-color);
+
+        .collectiontext {
+          font-family: var(--font-regular);
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.AllVideos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  max-height: 100%;
+}

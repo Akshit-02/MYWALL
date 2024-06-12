@@ -1,0 +1,93 @@
+.tellUsAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--white-color);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.editContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  .backIcon {
+    cursor: pointer;
+    margin-left: -16px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.rectDiv {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 16px;
+  margin-left: 0px;
+  margin-right: 8px;
+  border: 1px solid #e2e5e9;
+}
+
+.innerDiv {
+  display: grid;
+  align-self: center;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 16px;
+  margin-left: 0px;
+  margin-right: 8px;
+  border: 1px solid #e2e5e9;
+}
+
+.innerCircle {
+  display: grid;
+  align-self: center;
+}
+
+.button {
+  height: 48px;
+  flex-direction: row;
+  margin-top: 28px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 12px;
+  gap: 18px;
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--white-color);
+  font-family: var(--font-regular);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.error {
+  color: #e41818;
+  display: flex;
+  margin-top: 8px;
+  justify-content: left;
+  font-family: var(--font-regular);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
