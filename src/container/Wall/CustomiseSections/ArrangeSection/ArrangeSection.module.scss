@@ -1,0 +1,167 @@
+.addNewComponents {
+  //margin: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.characters {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.sectionName {
+  color: #22272f;
+  font-family: var(--font-regular);
+  font-size: 14px;
+
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.characters li {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #eff2f5;
+  background: #fff;
+  padding: 0.5em 0.8em 0.5em 0.5em;
+  margin-bottom: 1em;
+  margin: 8px;
+}
+
+.characters p {
+  max-width: none;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.charactersThumb {
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: white;
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+
+.charactersThumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.toggleContainer {
+  //margin-top: 20px;
+}
+.label {
+  position: relative;
+  //display: inline-block;
+  width: 34px;
+  height: 20px;
+  display: flex;
+  //margin-left: 12px;
+}
+
+.input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #667e95;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+
+.Button {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  padding: 17px;
+  color: var(--white-color);
+  font-size: 18px;
+  font-family: var(--font-semiBold);
+  border: none;
+  margin-top: 12px;
+}
+
+.buttonBorder {
+  border-radius: 12px;
+  padding: 16px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-family: var(--font-semiBold);
+  border: 1px solid var(--secondary-color);
+  margin-top: 12px;
+  background-color: var(--white-color);
+}
+.buttonsDiv {
+  display: flex;
+  flex-direction: column;
+}
+.labelText {
+  color: #333;
+  font-family: var(--font-semiBold);
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 12px;
+}
+.toggleWrapper {
+  display: flex;
+  align-items: center;
+
+  .toggleLabel {
+    position: relative;
+    width: 34px;
+    height: 20px;
+    display: flex;
+
+    .toggleInput {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .toggleInput:checked + .toggleSpan {
+      background-color: var(--primary-color);
+    }
+
+    .toggleInput:checked + .toggleSpan::before {
+      transform: translateX(14px);
+    }
+
+    .toggleSpan {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--light-grey-two);
+      transition: 0.3s;
+      border-radius: 30px;
+    }
+
+    .toggleSpan::before {
+      position: absolute;
+      content: "";
+      height: 15px;
+      width: 15px;
+      left: 3px;
+      bottom: 2.5px;
+      background-color: #fff;
+      border-radius: 95%;
+      transition: 0.3s;
+    }
+  }
+}
