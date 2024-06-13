@@ -1,0 +1,47 @@
+.bottomTab {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--white-color);
+  // padding: 12px 0 0 0;
+  z-index: 999;
+  width: 100%;
+
+  .bottomTabContainer {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    justify-content: space-between;
+
+    .tabName {
+      font-family: var(--font-regular);
+      color: #a2a2a2;
+      font-size: 12px;
+    }
+
+    .bottomTabItemContainer {
+      padding: 10px;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      gap: 4px;
+    }
+
+    .active {
+      background-color: var(--active-tab-bg-color);
+      border-radius: 12px;
+      color: var(--secondary-color);
+      padding: 10px 12px;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+
+      .tabName {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
