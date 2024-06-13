@@ -1,0 +1,46 @@
+.overlayContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 0px);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.reactPlayerContainer {
+  max-height: 19rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+
+.fallback {
+  height: 1rem;
+  width: 1rem;
+}
+
+.options {
+  position: absolute;
+  display: flex;
+  gap: 0.3rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.pausePlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.muteUnmute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
