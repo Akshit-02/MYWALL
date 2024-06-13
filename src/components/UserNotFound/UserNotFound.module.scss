@@ -1,0 +1,37 @@
+.container {
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .imageWrapper img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.8rem;
+    }
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-size: 14px;
+        text-align: center;
+        color: var(--light-black-color);
+        font-family: var(--font-regular);
+    }
+
+    .textContainer h3 {
+        font-family: var(--font-semiBold);
+    }
+    .goHomeButton {
+        padding: 0 3rem;
+    }
+    .goHomeButton {
+        background: rgb(64, 150, 255);
+    }
+    .goHomeButton:hover {
+        background: rgb(64, 150, 255, 0.8) !important;
+    }
+}
