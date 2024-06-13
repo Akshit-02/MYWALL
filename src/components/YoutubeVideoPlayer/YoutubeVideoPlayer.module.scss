@@ -1,0 +1,17 @@
+.playerContainer {
+  width: 256px;
+  height: 210px;
+  position: relative;
+
+  .reactPlayerContainer {
+    height: 100%;
+    width: 100%;
+
+    .reactPlayer {
+      > div {
+        overflow-y: hidden;
+        border-radius: 12px;
+      }
+    }
+  }
+}
