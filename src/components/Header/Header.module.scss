@@ -1,0 +1,14 @@
+.headerWrapper {
+    display: flex;
+    align-items: center;
+
+    .imageWrapper {
+        cursor: pointer;
+    }
+    .headerTextWrapper {
+        color: var(--light-black-text-color);
+        font-family: var(--font-semiBold);
+        font-size: 20px;
+        margin: auto;
+    }
+}
