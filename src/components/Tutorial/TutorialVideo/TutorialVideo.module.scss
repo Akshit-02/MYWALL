@@ -1,0 +1,170 @@
+.container {
+  padding: 0 2rem;
+
+  .header h1 {
+    margin: 0;
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .tutorialContainer {
+    display: flex;
+    gap: 1rem;
+
+    .tutorialWrapper {
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .videoContainer {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      .videoContainer div {
+        height: 100% !important;
+        width: 100% !important;
+      }
+      .videoContainer iframe {
+        border-radius: 32px;
+      }
+
+      .videoContent {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .videoContent h3 {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.9s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tutorialList {
+  width: 35%;
+  height: 40rem;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.tutorialList div:nth-child(2) {
+  border: none;
+}
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.listTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+.listContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 8px 4px;
+  border-top: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+.listContent:hover {
+  background-color: #e8e8e8;
+}
+.listImage img {
+  border-radius: 16px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.description h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.description p {
+  color: #505050;
+}
+
+.listHeader {
+  display: none;
+}
+.rotateUp {
+  transition: transform 0.3s ease;
+  transform: rotate(-180deg);
+}
+.rotateDown {
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+.selected {
+  background-color: #e0e0e0;
+  border-radius: 12px;
+}
+@media screen and (max-width: 992px) {
+  .tutorialContainer {
+    flex-direction: column;
+  }
+  .listHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  .tutorialWrapper {
+    width: 100%;
+  }
+  .tutorialList {
+    width: 100%;
+    height: auto;
+  }
+  .videoContainer {
+    height: 60vh;
+  }
+  .videoContainer iframe {
+    border-radius: 24px;
+  }
+  .tutorialList {
+    border-radius: 20px;
+  }
+  .collapsed {
+    display: none;
+  }
+  .expanded {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
