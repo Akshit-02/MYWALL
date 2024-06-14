@@ -1,0 +1,60 @@
+.addNewComponent {
+  margin-top: 28px;
+
+  .header {
+    font-family: var(--font-semiBold);
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--header-font-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .newComponent {
+    border-radius: 12px;
+    background-color: #f5f7ff;
+    height: 244px;
+    padding: 10px;
+    margin: 18px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px dashed var(--secondary-color);
+
+    .iconsContainer {
+      display: flex;
+      gap: 10px;
+    }
+
+    .emptyState {
+      display: inline-grid;
+      height: 64px;
+      background: #fff;
+      align-self: center;
+      width: 64px;
+      border-radius: 12px;
+
+      .imgIcon {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+
+    .addText {
+      align-self: flex-end;
+      color: #ffffff;
+      font-family: var(--font-regular);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      align-self: center;
+      margin-top: 16px;
+      background-color: var(--secondary-color);
+      border-radius: 8px;
+      padding: 10px;
+    }
+  }
+}
