@@ -1,0 +1,15 @@
+.player {
+  border-radius: 12px;
+  height: 17rem;
+  overflow: hidden;
+  width: 12rem;
+  background: var(--neutral-200);
+
+  .playerIframe {
+    padding: 4px;
+    position: relative;
+    left: -60px;
+    top: -120px;
+    height: 26rem;
+  }
+}
