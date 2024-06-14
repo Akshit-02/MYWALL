@@ -1,0 +1,24 @@
+.pageLoaderComponent {
+  height: 100vh;
+  padding: 1.25rem;
+  position: relative;
+
+  .logo {
+    animation: fadeLogo 1.5s ease-in-out infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @keyframes fadeLogo {
+    0% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.25;
+    }
+  }
+}
