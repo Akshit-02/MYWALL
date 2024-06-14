@@ -1,0 +1,23 @@
+.emptyState {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 0.5px dashed var(--light-grey-two);
+    border-radius: 10px;
+
+    .imgIcon {
+        filter: grayscale(1);
+    }
+
+    .message {
+        font-size: 14px;
+        font-family: var(--font-regular);
+        color: var(--light-grey);
+        white-space: pre-line;
+        text-align: center;
+    }
+}
