@@ -1,0 +1,286 @@
+.container {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+}
+
+.header h1 {
+  font-size: 2.9rem;
+  text-align: center;
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 0;
+}
+.header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: center;
+}
+
+.creator {
+  /* padding: 2rem 0rem; */
+}
+.creatorImg {
+  /* background-color: #15f4ee; */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, auto);
+  height: 80vh;
+  /* margin: 24px auto 0; */
+  padding: 2rem 1rem;
+  will-change: transform;
+  transition: all 0.2s linear;
+}
+.analytics {
+  background: transparent;
+}
+.analyticsData {
+  padding: 0 10rem;
+  width: 100%;
+  height: 25rem;
+  z-index: 10;
+  background: linear-gradient(90deg, #5d25571f, #000, #5d255742);
+  border: 1px solid #ffffff24;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  border: 2px solid beige;
+  transform: translateY(-50px);
+}
+.creatorPic {
+  /* height: 100%;
+  width: 100%; */
+}
+.creator1 {
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(#15f4ee, #ffa600);
+  box-shadow: inset 0 2px 24px #15f4ed81, 0 2px 24px #15f4ed7a;
+  height: 12vw;
+  width: 12vw;
+  position: relative;
+}
+.creator2 {
+  border-radius: 50%;
+  align-self: start;
+  background: linear-gradient(#ffe259, #ffa751);
+  box-shadow: inset 0 2px 24px #ffe2599f, 0 2px 24px #ffe2599f;
+  height: 18vw;
+  justify-self: center;
+  width: 18vw;
+  overflow: hidden;
+  position: relative;
+}
+.creator3 {
+  border-radius: 50%;
+  align-self: end;
+  background: linear-gradient(#eecda3, #ef629f);
+  box-shadow: inset 0 2px 24px #ef629f9f, 0 2px 24px #ef629f9f;
+  height: 20vw;
+  width: 20vw;
+  overflow: hidden;
+  position: relative;
+}
+.creator4 {
+  border-radius: 50%;
+  align-self: start;
+  background: linear-gradient(0deg, #ff5f6d, #ffc371);
+  box-shadow: inset 0 2px 24px #ff5f6c93, 0 2px 24px #ff5f6c93;
+  height: 14vw;
+  width: 14vw;
+  overflow: hidden;
+  position: relative;
+}
+.creator5 {
+  border-radius: 50%;
+  align-self: end;
+  background: linear-gradient(#70e1f5, #ffd194);
+  box-shadow: inset 0 2px 24px #ffd19493, 0 2px 24px #ffd19493;
+  height: 16vw;
+  width: 16vw;
+  overflow: hidden;
+  position: relative;
+}
+.creator6 {
+  border-radius: 50%;
+  background: linear-gradient(#ddd6f3, #faaca8);
+  box-shadow: inset 0 2px 24px #ddd6f39d, 0 2px 24px #ddd6f39d;
+  height: 10vw;
+  transform: translate(70px, -94px);
+  width: 10vw;
+  overflow: hidden;
+  position: relative;
+}
+.creator7 {
+  border-radius: 50%;
+  align-self: start;
+  background: linear-gradient(#de6262, #ffb88c);
+  box-shadow: inset 0 2px 24px #de626281, 0 2px 24px #de626281;
+  height: 14vw;
+  justify-self: end;
+  width: 14vw;
+  overflow: hidden;
+  position: relative;
+}
+.creator8 {
+  border-radius: 50%;
+  align-self: end;
+  background: linear-gradient(#ffe259, #ffa751);
+  box-shadow: inset 0 2px 24px #ffe35985, 0 2px 24px #ffe35985;
+  height: 16vw;
+  width: 16vw;
+  overflow: hidden;
+  position: relative;
+}
+.creator9 {
+  border-radius: 50%;
+  background: linear-gradient(#1d2b64, #f8cdda);
+  box-shadow: inset 0 2px 24px #f8cdda9f, 0 2px 24px #f8cdda9f;
+  height: 15vw;
+  transform: translate(-18vw, -2vw);
+  width: 15vw;
+  overflow: hidden;
+  position: relative;
+}
+.creator10 {
+  align-items: center;
+  background: linear-gradient(#4b79a1, #283e51);
+  box-shadow: inset 0 2px 24px #159bf49f, 0 2px 24px #159bf49f;
+  color: #fff;
+  display: flex;
+  font-family: Urbanist-Bold;
+  font-size: 2vw;
+  height: 10vw;
+  justify-content: center;
+  transform: translate(16vw);
+  width: 10vw;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.creatorsCountContainer {
+  /* background: linear-gradient(90deg, #5d25571f, #000, #5d255742); */
+  border: 1px solid #ffffff24;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 544px;
+  margin: 0 auto;
+  max-height: calc(100vh - 84px);
+  max-width: calc(100vw - 32px);
+  position: relative;
+  transform: translateY(-50px);
+  width: 95%;
+  z-index: 10;
+}
+.gridMatrixDiv {
+  border: 1px solid #ffffff24;
+}
+.content {
+  position: absolute;
+  top: 35%;
+  font-size: 72px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    overflow: hidden;
+    padding: 2rem 0.5rem;
+  }
+  .creatorImg {
+    /* background-color: #15f4ee; */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    height: 50vh;
+    /* margin: 24px auto 0; */
+    padding: 0;
+    will-change: transform;
+    transition: all 0.2s linear;
+  }
+  .creator1 {
+    width: 100px;
+    height: 100px;
+  }
+  .creator2 {
+    align-self: start;
+    height: 120px;
+    justify-self: center;
+    width: 120px;
+  }
+  .creator5 {
+    align-self: end;
+    height: 30vw;
+    transform: translate(39vw, -34vw);
+    width: 30vw;
+  }
+  .creator4 {
+    height: 25vw;
+    transform: translate(16vw, -17vw);
+    width: 25vw;
+  }
+  .creator3 {
+    align-self: end;
+    height: 35vw;
+    transform: translate(-31vw, 31vw);
+    width: 35vw;
+  }
+  .creator7 {
+    align-self: start;
+    height: 25vw;
+    justify-self: end;
+    transform: translate(-3vw, -27vw);
+    width: 25vw;
+  }
+  .creator6 {
+    height: 80px;
+    transform: translate(22px, 22px);
+    width: 80px;
+  }
+  .creator8 {
+    align-self: end;
+    height: 140px;
+    transform: translate(2vw, -2vw);
+    width: 140px;
+  }
+  .creator9 {
+    height: 125px;
+    transform: translateY(-34vw);
+    width: 125px;
+  }
+  .creator10 {
+    font-size: 20px;
+    height: 24vw;
+    transform: translate(1px, -4vw);
+    width: 24vw;
+  }
+  .creatorsCountContainer {
+    border: 1px solid #ffffff24;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 544px;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-50px);
+    width: 95%;
+    z-index: 10;
+    background-position: -100px 0;
+    background: linear-gradient(90deg, #ff95f426, #000, #8d4f873b);
+    max-height: calc(100vw - 62px);
+    max-width: calc(100vw - 32px);
+  }
+
+  .content {
+    top: 30%;
+    font-size: 36px;
+  }
+}
