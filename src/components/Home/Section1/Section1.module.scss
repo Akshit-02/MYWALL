@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+  background: url("/images/webp/gradient.webp");
+  background-size: cover;
+}
+.left {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.right {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.content h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0;
+}
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  max-width: 530px;
+}
+.signUpBtn {
+  text-decoration: none;
+  color: var(--black-color);
+  background-color: #19d85a;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 30px 0 0px 8px;
+  cursor: pointer;
+}
+.arrow {
+  transform: rotate(315deg);
+}
+.lottieContainer {
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+    display: block;
+    background: white;
+  }
+  .content h1 {
+    font-size: 28px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .content p {
+    margin-top: 8px;
+  }
+  .signUpBtn {
+    width: 100%;
+    margin: 18px 0;
+  }
+  .lottieContainer {
+    padding: 0;
+  }
+}
