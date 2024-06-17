@@ -1,0 +1,180 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f8f8f8;
+  padding: 2rem;
+
+  .formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 12px;
+    width: 100%;
+
+    .left {
+      width: 40%;
+      background-color: black;
+      border-radius: 12px;
+      padding: 28px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .content h3 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        font-weight: 500;
+      }
+    }
+    .right {
+      width: 60%;
+      padding: 24px;
+
+      .names {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+      }
+
+      .contactDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+      }
+
+      .sendBtnDiv {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .sendBtn {
+        background-color: #000;
+        color: white;
+        border-radius: 6px;
+        padding: 12px 24px;
+        width: fit-content;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.inputTag {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  outline: none;
+  background: #fff;
+  box-shadow: none;
+  font-size: 14px;
+  color: #000;
+  padding: 8px;
+  border-bottom: 1px solid #000;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+
+    .formContainer {
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+        padding: 16px 20px;
+        gap: 2rem;
+
+        .content h3 {
+          font-size: 1.8rem;
+        }
+        .content p {
+          font-size: 1rem;
+        }
+      }
+      .right {
+        width: 100%;
+        padding: 8px 16px;
+        height: 32rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .form {
+          gap: 2rem;
+          width: 100%;
+        }
+        .names {
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .contactDetails {
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        .sendBtn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
