@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.header {
+}
+.header h2 {
+  font-size: 2.9rem;
+  text-align: center;
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 0;
+}
+.whySections {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.signUpBtn {
+  text-decoration: none;
+  color: var(--black-color);
+  background-color: #19d85a;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+}
+.getStarted {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 0;
+}
+.arrow {
+  transform: rotate(315deg);
+}
+
+@media screen and (max-width: 767px) {
+  .header h2 {
+    font-size: 2rem;
+  }
+}
