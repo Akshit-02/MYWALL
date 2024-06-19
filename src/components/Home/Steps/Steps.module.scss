@@ -1,0 +1,153 @@
+.container {
+  background-color: black;
+  color: #fff;
+  padding: 3rem 4rem;
+}
+.header h1 {
+  font-size: 2.9rem;
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+.header p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin: 1rem 0;
+}
+
+.left h4 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 0;
+}
+.left p {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+}
+.steps {
+  display: flex;
+}
+.left {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0 0;
+  width: 50vw;
+}
+.step {
+  margin: 24px 0 0;
+  align-items: center;
+  height: calc(100vh - 62px);
+  padding-top: 62px !important;
+  width: 50%;
+}
+.mockScreen {
+  display: flex;
+  height: calc(320vh + 24px);
+  justify-content: center;
+  margin: 24px auto;
+  position: sticky;
+  top: 180px;
+  width: 50vw;
+}
+.mobile {
+  border: 1px solid #242424;
+  border-radius: 30px;
+  height: 75vh;
+  overflow: hidden;
+  position: sticky;
+  top: calc(15.5vh + 54px);
+  width: 40vh;
+}
+.mobileBackground {
+  background: #1a1a1a;
+  border: 10px solid #000;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.stepImage {
+  /* position: absolute;
+  height: 100%;
+  width: 100%; */
+  border-radius: 20px;
+  animation: slide-in 0.5s ease-out forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .step {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .steps {
+    flex-direction: column-reverse;
+  }
+  .mockScreen {
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    margin: 24px auto;
+    position: unset;
+    width: 60vw;
+  }
+  .mobile {
+    border: 1px solid #242424;
+    border-radius: 30px;
+    height: 55vh;
+    overflow: hidden;
+    width: 30vh;
+  }
+  .mobileBackground {
+    display: flex;
+    height: 100%;
+    /* position: unset; */
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+  .step1,
+  .step2,
+  .step3 {
+    margin: 24px 0 0;
+    align-items: center;
+    height: fit-content;
+    padding-top: 30px !important;
+    width: 100%;
+  }
+  .step1 h4,
+  .step2 h4,
+  .step3 h4 {
+    font-size: 16px;
+  }
+
+  .step1 p,
+  .step2 p,
+  .step3 p {
+    font-size: 28px;
+  }
+}
