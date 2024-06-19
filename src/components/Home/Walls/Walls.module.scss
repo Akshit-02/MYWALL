@@ -1,0 +1,24 @@
+.container {
+  background-attachment: fixed;
+  background-image: url("/images/webp/wall-bg.webp");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 1px) auto;
+  height: 80vh;
+}
+/* .lazyload {
+  background-image: url("/images/webp/wall.webp");
+  background-size: calc(100% - 1px) auto;
+  background-size: cover;
+} */
+
+@media screen and (max-width: 767px) {
+  .container {
+    height: 60vh;
+    background-size: cover;
+    background-attachment: unset;
+  }
+  .lazyload {
+    background-size: cover;
+  }
+}
