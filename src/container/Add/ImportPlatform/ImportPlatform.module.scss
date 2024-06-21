@@ -1,0 +1,75 @@
+.tellUsAbout {
+  display: flex;
+  background-color: var(--white-color);
+  flex-direction: column;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    margin-top: 40px;
+  }
+
+  .rectDiv {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 16px;
+    margin-left: 0px;
+    margin-right: 8px;
+    border: 1px solid #e2e5e9;
+  }
+
+  .innerDiv {
+    display: grid;
+    align-self: center;
+  }
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 16px;
+  margin-left: 0px;
+  margin-right: 8px;
+  border: 1px solid #e2e5e9;
+
+  .innerCircle {
+    display: grid;
+    align-self: center;
+  }
+}
+
+.error {
+  color: #e41818;
+  display: flex;
+  margin-top: 8px;
+  justify-content: left;
+  font-family: var(--font-regular);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.failedMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-25);
+  padding: 14px;
+  border-radius: 10px;
+  position: relative;
+  font-family: var(--font-regular);
+  span {
+    font-size: 12px;
+    text-align: center;
+  }
+}
