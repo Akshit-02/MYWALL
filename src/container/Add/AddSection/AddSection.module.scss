@@ -1,0 +1,15 @@
+.addSectionContainer {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .strong {
+    width: max-content;
+    font-family: var(--font-regular);
+    font-size: 14px;
+    font-weight: 600;
+    color: #363c45;
+  }
+}
