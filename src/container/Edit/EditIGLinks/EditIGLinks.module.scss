@@ -1,0 +1,13 @@
+.mainWrapper {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .reactPlayerContainer {
+    width: 150px;
+    height: 240px;
+    background: var(--neutral-200);
+  }
+}
