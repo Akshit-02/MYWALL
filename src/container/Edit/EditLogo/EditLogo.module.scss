@@ -1,0 +1,205 @@
+.parentWrapper {
+  font-family: var(--font-regular);
+  font-size: 14px;
+  position: relative;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .messageWrapper {
+      display: flex;
+      padding: 12px;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      background: var(--blue-25);
+      border-radius: 8px;
+      span {
+        text-align: center;
+        color: var(--neutral-500);
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 16px;
+      }
+    }
+    .imageRowWrapper {
+      display: flex;
+      flex-direction: column;
+      .ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .imageWrapper {
+          display: flex;
+          padding: 12px;
+          border-radius: 12px;
+          border: 1px solid var(--white-color-2);
+          background: var(--white-color);
+
+          .imageTag {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            justify-content: flex-start;
+            border-radius: 8px;
+            border: 1px solid var(--white-color-2);
+            position: relative;
+
+            img {
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          .videoWrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-right: 10px;
+            .videoPlayButton {
+              color: transparent;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            video {
+              object-fit: cover;
+              border-radius: 8px;
+            }
+            img {
+              border-radius: 8px;
+            }
+          }
+          .rightSectionWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .sizeTitleWrapper {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              max-width: 15rem;
+              .imageTitle {
+                font-size: 16px;
+                font-weight: bolder;
+                text-overflow: ellipsis;
+                text-wrap: nowrap;
+                overflow-x: hidden;
+                max-width: 12rem;
+              }
+              .imageSize {
+                color: var(--light-black-text-color);
+                text-overflow: ellipsis;
+                font-size: 12px;
+              }
+              .thumbnailTextWrapper {
+                width: fit-content;
+                color: var(--secondary-color);
+                font-size: 12px;
+                .thumbnailText {
+                  cursor: pointer;
+                }
+                .editThumbnailWrapper {
+                  display: flex;
+                  .divider {
+                    margin: 0 4px;
+                  }
+                }
+                .customFileInput {
+                  display: inline-block;
+                  position: relative;
+                  overflow: hidden;
+                }
+                .customFileInput label {
+                  color: var(--secondary-color);
+                  border-radius: 5px;
+                  cursor: pointer;
+                  display: inline-block;
+                }
+                .customFileInput input[type="file"] {
+                  position: absolute;
+                  font-size: 100px;
+                  right: 0;
+                  top: 0;
+                  opacity: 0;
+                  cursor: pointer;
+                }
+                .customFileInput input[type="file"]:focus + label {
+                  outline: none; /* Remove outline on focus */
+                  box-shadow: none; /* Remove any box shadow on focus */
+                  border: none; /* Remove any border on focus */
+                }
+                .customFileInput input[type="file"]::-webkit-file-upload-button {
+                  visibility: hidden; /* Hide the default file upload button in Chrome */
+                }
+                .customFileInput label:hover {
+                  background-color: #2980b9; /* Change color on hover */
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.addMoreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.fadeIn {
+  position: absolute;
+  bottom: 5rem;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+  font-size: 12px;
+  font-family: var(--font-regular);
+  color: var(--alert-color);
+  animation: fadeIn 0.5s ease-in;
+}
+.fadeOut {
+  animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.charactersThumb {
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  margin-right: 0;
+}
+
+.charactersThumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
